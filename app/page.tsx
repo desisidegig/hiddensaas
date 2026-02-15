@@ -61,8 +61,8 @@ const faqItems = [
     answer: "Yes. Your name, logo, and domain are fully yours. HiddenSaaS stays behind the scenes.",
   },
   {
-    question: "Do I need to code or manage developers?",
-    answer: "No coding needed. We build, host, and maintain the software while you focus on growth and audience.",
+    question: "Can any creator sell this to their audience?",
+    answer: "Yes. We design the product around your niche and audience so you can launch and sell it as a new income source.",
   },
 ];
 
@@ -136,7 +136,7 @@ export default function Home() {
               The next income stream creators aren&apos;t talking about <span className="text-[#5B4EE8]">yet.</span>
             </h1>
             <p className="mt-8 max-w-3xl text-lg font-medium text-[#6B7280] md:text-xl">
-              Launch SaaS products your audience will love. You own it. You market it. We build and manage it.
+              We build software products any creator can sell to their audience. You own it. You market it. We build and manage it.
             </p>
 
             <div className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">

@@ -11,25 +11,28 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hiddensaas.com"),
   title: {
-    default: "HiddenSaaS | White-Label SaaS for Creators",
+    default: "HiddenSaaS | New Income Sources for Creators",
     template: "%s | HiddenSaaS",
   },
   description:
-    "Launch SaaS products your audience will love. You own it, you market it, HiddenSaaS builds and manages it.",
+    "HiddenSaaS helps creators unlock new income sources by launching software products they can sell directly to their audience.",
   keywords: [
     "HiddenSaaS",
-    "white-label SaaS",
+    "income sources for creators",
+    "new income stream for creators",
     "creator monetization",
-    "build SaaS for creators",
+    "software creators can sell",
+    "sell software to your audience",
+    "white-label software for creators",
     "creator economy software",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "HiddenSaaS | White-Label SaaS for Creators",
+    title: "HiddenSaaS | New Income Sources for Creators",
     description:
-      "Launch SaaS products your audience will love. You own it, you market it, we build and manage it.",
+      "We build software products any creator can brand and sell to their audience as a new income source.",
     url: "https://hiddensaas.com",
     siteName: "HiddenSaaS",
     type: "website",
@@ -37,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HiddenSaaS | White-Label SaaS for Creators",
+    title: "HiddenSaaS | New Income Sources for Creators",
     description:
-      "Launch SaaS products your audience will love. You own it, you market it, we build and manage it.",
+      "We build software products any creator can brand and sell to their audience as a new income source.",
   },
   robots: {
     index: true,

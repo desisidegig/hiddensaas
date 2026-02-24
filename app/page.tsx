@@ -35,7 +35,7 @@ const steps = [
     number: "01",
     title: "We Build It",
     description:
-      "We build a software tool tailored to your niche. Career tools, finance tools, productivity apps. One-time setup fee.",
+      "We scope and build your monetizable software tool tailored to your niche.",
   },
   {
     number: "02",
@@ -47,22 +47,22 @@ const steps = [
     number: "03",
     title: "You Market It",
     description:
-      "Launch to your audience, keep the revenue. We handle hosting and maintenance for a small monthly fee.",
+      "Launch to your audience and keep the revenue. We handle hosting, updates, and maintenance.",
   },
 ];
 
 const faqItems = [
   {
-    question: "How long does it take to launch?",
-    answer: "Most creator products go live in 2–4 weeks depending on scope and integrations.",
+    question: "How fast can we launch?",
+    answer: "Simple tools can go live in days. More advanced tools may take longer depending on scope.",
   },
   {
     question: "Do I own the product and brand?",
-    answer: "Yes. Your name, logo, and domain are fully yours. HiddenSaaS stays behind the scenes.",
+    answer: "Yes. Your name, domain, and brand are fully yours. We operate behind the scenes.",
   },
   {
-    question: "Do I need to code or manage developers?",
-    answer: "No coding needed. We build, host, and maintain the software while you focus on growth and audience.",
+    question: "What do you handle?",
+    answer: "We handle development, hosting, payments, maintenance, bug fixes, and technical management.",
   },
 ];
 
@@ -110,7 +110,13 @@ export default function Home() {
 
   return (
     <div className="bg-white text-[#0D0D0D]">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-[#E5E7EB] bg-white/95 backdrop-blur-sm">
+      <div className="fixed inset-x-0 top-0 z-[60] bg-[#0D0D0D] py-2 text-center text-xs font-semibold text-white">
+        🚀 Founding Creator Slots Open – Only 3 Available{" "}
+        <a href="#founding-program" className="underline underline-offset-2 hover:text-[#C5BEFF]">
+          Apply Now
+        </a>
+      </div>
+      <header className="fixed inset-x-0 top-8 z-50 border-b border-[#E5E7EB] bg-white/95 backdrop-blur-sm">
         <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6 md:px-10">
           <div className="flex items-center gap-3">
             <span className="h-3 w-3 rounded-full bg-[#5B4EE8]" />
@@ -118,25 +124,25 @@ export default function Home() {
           </div>
           <a
             href="#lead-form"
-            className="rounded-full bg-[#5B4EE8] px-7 py-3 text-sm font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
+            className="hidden sm:inline-block rounded-full bg-[#5B4EE8] px-5 py-3 text-sm font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
           >
-            Book a Call
+            Book a Strategy Call
           </a>
         </div>
       </header>
 
       <main>
-        <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28 pb-20 md:px-10">
+        <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-36 pb-20 md:px-10">
           <div className="absolute right-[-220px] top-[180px] -z-0 h-[420px] w-[420px] rounded-[42%_58%_63%_37%/45%_34%_66%_55%] bg-[#F0EEFF]" />
           <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-start">
             <span className="mb-8 rounded-full bg-[#F0EEFF] px-5 py-2 text-sm font-medium text-[#5B4EE8]">
-              The creator economy&apos;s best kept secret
+              For creators who want a software product
             </span>
             <h1 className="max-w-5xl text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-              The next income stream creators aren&apos;t talking about <span className="text-[#5B4EE8]">yet.</span>
+              We Build Monetizable Software Tools For <span className="text-[#5B4EE8]">Creators</span>
             </h1>
             <p className="mt-8 max-w-3xl text-lg font-medium text-[#6B7280] md:text-xl">
-              Launch SaaS products your audience will love. You own it. You market it. We build and manage it.
+              No upfront setup cost. Delivered fast. Fully managed by us.
             </p>
 
             <div className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
@@ -144,7 +150,7 @@ export default function Home() {
                 href="#lead-form"
                 className="rounded-full bg-[#5B4EE8] px-8 py-4 text-center text-base font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
               >
-                Book a Call
+                Book a Strategy Call
               </a>
               <a
                 href="#how-it-works"
@@ -157,8 +163,56 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-[#6B7280]">
               <span>✦ No coding needed</span>
               <span>✦ You keep the revenue</span>
-              <span>✦ Live in 2–4 weeks</span>
+              <span>✦ Delivered fast (days for simple tools)</span>
             </div>
+          </div>
+        </section>
+
+        <section id="what-we-build" className="px-6 py-24 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-8 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+              <span className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">WHAT WE BUILD</span>
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+            </div>
+            <h2 className="mx-auto mb-14 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
+              Instead Of Promoting Apps, Build Your Own.
+            </h2>
+            <div className="mx-auto max-w-3xl grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {[
+                {
+                  category: "Career Creators",
+                  items: ["AI Resume Builder", "AI Interview Simulator", "Study Assistant Tool"],
+                },
+                {
+                  category: "Fitness Creators",
+                  items: ["AI Workout Planner", "AI Meal Planner", "All-in-one Fitness App"],
+                },
+                {
+                  category: "Finance / Investing",
+                  items: ["Stock Dashboard", "Portfolio Tracker", "Market Insights Tool"],
+                },
+                {
+                  category: "Health & Wellness",
+                  items: ["Meditation App", "Breathwork App", "Mood / Habit Tracker"],
+                },
+              ].map((group) => (
+                <article key={group.category} className="rounded-3xl border border-[#E5E7EB] bg-white p-9 md:p-10">
+                  <p className="mb-4 text-xs font-extrabold tracking-[0.14em] text-[#5B4EE8]">{group.category}</p>
+                  <ul className="space-y-2">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-center gap-2 text-sm font-medium text-[#0D0D0D]">
+                        <span className="text-[#C5BEFF] font-extrabold">&#8599;</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+            <p className="mx-auto mt-12 max-w-2xl text-center text-base font-semibold text-[#0D0D0D]">
+              Whatever your niche — there&apos;s a software product your audience would engage with.
+            </p>
           </div>
         </section>
 
@@ -186,12 +240,108 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="products" className="bg-[#F0EEFF] px-6 py-24 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-8 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+              <span className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">PROOF</span>
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+            </div>
+            <h2 className="mx-auto mb-14 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
+              Products We&apos;ve Built
+            </h2>
+            <div className="mx-auto max-w-xl">
+              <article className="rounded-3xl bg-white p-8 shadow-xl shadow-black/5 md:p-10">
+                <h3 className="text-2xl font-extrabold text-[#0D0D0D]">ResumeDarzi</h3>
+                <p className="mt-4 text-base leading-relaxed font-medium text-[#6B7280]">
+                  Live AI powered resume to Job Description matcher tool built and deployed end-to-end. Includes payments, user flows, and admin management.
+                </p>
+                <ul className="mt-5 space-y-2 text-sm font-medium text-[#0D0D0D]">
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Live production tool</li>
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Payments integrated</li>
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Fully deployed &amp; maintained</li>
+                </ul>
+                <div className="relative mt-7 w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    src="https://www.loom.com/embed/5af03cf3ddef42a79f78bdcebe3307d6"
+                    frameBorder="0"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full rounded-2xl bg-[#F0EEFF]"
+                    title="Resume Darzi - AI Resume Builder"
+                  />
+                </div>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="https://resumedarzi.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-[#5B4EE8] px-6 py-3 text-center text-sm font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
+                  >
+                    Visit Live Tool
+                  </a>
+                  <a
+                    href="https://www.loom.com/share/5af03cf3ddef42a79f78bdcebe3307d6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-[#5B4EE8] px-6 py-3 text-center text-sm font-extrabold text-[#5B4EE8]"
+                  >
+                    Watch Demo
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="founding-program" className="px-6 py-24 md:px-10">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="mb-8 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+              <span className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">LIMITED OFFER</span>
+              <span className="h-px w-10 bg-[#D1CCFF]" />
+            </div>
+            <h2 className="mx-auto mb-6 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
+              Founding Creator Program
+            </h2>
+            <p className="mx-auto mb-10 max-w-2xl text-center text-lg font-medium text-[#6B7280]">
+              We&apos;re onboarding a limited number of creators under a special structure.
+            </p>
+            <div className="mx-auto max-w-xl rounded-3xl border border-[#E5E7EB] bg-white p-8 md:p-10">
+              <ul className="space-y-4 text-base font-medium text-[#0D0D0D]">
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
+                  <span>$0 upfront. We build first.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
+                  <span>Setup fee paid only after the product is live.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
+                  <span> <span className="line-through text-[#9CA3AF]">Standard setup: $3000</span> → Founding rate: $1500 <span className="text-[#5B4EE8] font-semibold">(50% off)</span>.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
+                  <span>We manage hosting, maintenance, updates, and operations.</span>
+                </li>
+              </ul>
+              <a
+                href="#lead-form"
+                className="mt-7 block w-full rounded-full bg-[#5B4EE8] px-6 py-4 text-center text-base font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
+              >
+                Apply For A Founding Slot
+              </a>
+              <p className="mt-4 text-center text-sm font-medium text-[#6B7280]">Limited to 3 creators.</p>
+            </div>
+          </div>
+        </section>
+
         <section id="lead-form" className="bg-[#F0EEFF] px-6 py-24 md:px-10">
           <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-10 lg:grid-cols-2">
             <div>
               <p className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">GET STARTED</p>
               <h2 className="mt-4 max-w-xl text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
-                Let&apos;s build your hidden product
+                Let&apos;s Build a Tool Your Audience Will Love
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed font-medium text-[#6B7280]">
                 Tell us about yourself and your audience. We&apos;ll reach out within 24 hours to schedule a call.
@@ -207,7 +357,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-[#5B4EE8]">✓</span>
-                  <span>Built and launched in 2–4 weeks</span>
+                  <span>Delivered fast (days for simple tools)</span>
                 </li>
               </ul>
             </div>
@@ -374,7 +524,7 @@ export default function Home() {
           </a>
         </div>
         <p className="mt-3 text-sm font-medium text-[#6B7280]">
-          Email: <a href="mailto:hiddensaas@gmail.com" className="text-[#5B4EE8] hover:underline">hiddensaas@gmail.com</a>
+          Email: <a href="mailto:dsg@hiddensaas.com" className="text-[#5B4EE8] hover:underline">dsg@hiddensaas.com</a>
         </p>
       </footer>
     </div>

@@ -33,21 +33,18 @@ const audienceOptions = [
 const steps = [
   {
     number: "01",
-    title: "We Build It",
-    description:
-      "We scope and build your monetizable software tool tailored to your niche.",
+    title: "We build and set up your product",
+    description: "We handle everything technical and get your product ready.",
   },
   {
     number: "02",
-    title: "You Brand It",
-    description:
-      "Your name, logo, domain. Completely yours. Your audience never knows we exist. We're the engine, you're the face.",
+    title: "You launch it to your audience",
+    description: "Share it with your audience under your own brand.",
   },
   {
     number: "03",
-    title: "You Market It",
-    description:
-      "Launch to your audience and keep the revenue. We handle hosting, updates, and maintenance.",
+    title: "You grow and monetize",
+    description: "Turn your audience into users and revenue.",
   },
 ];
 
@@ -109,6 +106,7 @@ export default function Home() {
   };
 
   return (
+    <>
     <div className="bg-white text-[#0D0D0D]">
       <div className="fixed inset-x-0 top-0 z-[60] bg-[#0D0D0D] py-2 text-center text-xs font-semibold text-white">
         🚀 Founding Creator Slots Open – Only 3 Available{" "}
@@ -141,8 +139,11 @@ export default function Home() {
             <h1 className="max-w-5xl text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
               We Build Monetizable Software Tools For <span className="text-[#5B4EE8]">Creators</span>
             </h1>
-            <p className="mt-8 max-w-3xl text-lg font-medium text-[#6B7280] md:text-xl">
-              No upfront setup cost. Delivered fast. Fully managed by us.
+            <p className="mt-4 max-w-3xl text-xl font-semibold text-[#0D0D0D] md:text-2xl">
+              Turn your audience into your own product.
+            </p>
+            <p className="mt-6 max-w-3xl text-lg font-medium text-[#6B7280] md:text-xl">
+              Built for you. No upfront cost. Fully managed.
             </p>
 
             <div className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
@@ -175,9 +176,12 @@ export default function Home() {
               <span className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">WHAT WE BUILD</span>
               <span className="h-px w-10 bg-[#D1CCFF]" />
             </div>
-            <h2 className="mx-auto mb-14 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
-              Instead Of Promoting Apps, Build Your Own.
+            <h2 className="mx-auto mb-4 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
+              Instead of promoting apps, build your own ecosystem.
             </h2>
+            <p className="mx-auto mb-14 max-w-2xl text-center text-lg font-medium text-[#6B7280]">
+              A product your audience actually uses — not just watches.
+            </p>
             <div className="mx-auto max-w-3xl grid grid-cols-1 gap-5 sm:grid-cols-2">
               {[
                 {
@@ -211,7 +215,7 @@ export default function Home() {
               ))}
             </div>
             <p className="mx-auto mt-12 max-w-2xl text-center text-base font-semibold text-[#0D0D0D]">
-              Whatever your niche — there&apos;s a software product your audience would engage with.
+              Whatever your niche — there&apos;s a product your audience would use and love.
             </p>
           </div>
         </section>
@@ -250,6 +254,9 @@ export default function Home() {
             <h2 className="mx-auto mb-14 max-w-4xl text-center text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
               Products We&apos;ve Built
             </h2>
+            <p className="mx-auto mb-8 max-w-2xl text-center text-lg font-medium text-[#6B7280]">
+              Real products. Fully built, deployed, and running.
+            </p>
             <div className="mx-auto max-w-xl">
               <article className="rounded-3xl bg-white p-8 shadow-xl shadow-black/5 md:p-10">
                 <h3 className="text-2xl font-extrabold text-[#0D0D0D]">ResumeDarzi</h3>
@@ -304,34 +311,37 @@ export default function Home() {
               Founding Creator Program
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-center text-lg font-medium text-[#6B7280]">
-              We&apos;re onboarding a limited number of creators under a special structure.
+              We&apos;re onboarding a small number of creators to launch their own product.
             </p>
             <div className="mx-auto max-w-xl rounded-3xl border border-[#E5E7EB] bg-white p-8 md:p-10">
               <ul className="space-y-4 text-base font-medium text-[#0D0D0D]">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
-                  <span>$0 upfront. We build first.</span>
+                  <span>0% upfront. We build first.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
-                  <span>Setup fee paid only after the product is live.</span>
+                  <span>Fully set up and launched for you.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
-                  <span> <span className="line-through text-[#9CA3AF]">Standard setup: $3000</span> → Founding rate: $1500 <span className="text-[#5B4EE8] font-semibold">(50% off)</span>.</span>
+                  <span>We handle all tech, hosting, and maintenance.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 text-[#5B4EE8] font-extrabold">✓</span>
-                  <span>We manage hosting, maintenance, updates, and operations.</span>
+                  <span>You focus on your audience and growth.</span>
                 </li>
               </ul>
+              <p className="mt-6 text-sm font-medium text-[#6B7280]">
+                We&apos;re doing this with a few creators to prove and scale the model together.
+              </p>
               <a
                 href="#lead-form"
                 className="mt-7 block w-full rounded-full bg-[#5B4EE8] px-6 py-4 text-center text-base font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
               >
                 Apply For A Founding Slot
               </a>
-              <p className="mt-4 text-center text-sm font-medium text-[#6B7280]">Limited to 3 creators.</p>
+              <p className="mt-4 text-center text-sm font-medium text-[#6B7280]">Limited slots available.</p>
             </div>
           </div>
         </section>
@@ -341,10 +351,10 @@ export default function Home() {
             <div>
               <p className="text-xs font-extrabold tracking-[0.18em] text-[#5B4EE8]">GET STARTED</p>
               <h2 className="mt-4 max-w-xl text-4xl leading-tight font-extrabold tracking-tight md:text-6xl">
-                Let&apos;s Build a Tool Your Audience Will Love
+                Let&apos;s Launch Your Product
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed font-medium text-[#6B7280]">
-                Tell us about yourself and your audience. We&apos;ll reach out within 24 hours to schedule a call.
+                Tell us about your audience. We&apos;ll get back to you within 24 hours.
               </p>
               <ul className="mt-8 space-y-3 text-base font-medium text-[#0D0D0D]">
                 <li className="flex items-center gap-3">
@@ -528,5 +538,6 @@ export default function Home() {
         </p>
       </footer>
     </div>
+    </>
   );
 }

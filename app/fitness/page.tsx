@@ -189,7 +189,7 @@ export default function FitnessPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════
-            EXTRA APP SCREENSHOTS ROW
+            EXTRA APP SCREENSHOTS ROW 
         ═══════════════════════════════════════════════ */}
         <section className="px-6 py-16 md:px-10">
           <div className="mx-auto max-w-6xl">

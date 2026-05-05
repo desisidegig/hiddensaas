@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 
+import VideoEmbed from "@/components/VideoEmbed";
+
 const platformOptions = [
   "YouTube",
   "Instagram",
@@ -106,7 +108,6 @@ export default function Home() {
   };
 
   return (
-    <>
     <div className="bg-white text-[#0D0D0D]">
       <div className="fixed inset-x-0 top-0 z-[60] bg-[#0D0D0D] py-2 text-center text-xs font-semibold text-white">
         🚀 Founding Creator Slots Open – Only 3 Available{" "}
@@ -257,7 +258,7 @@ export default function Home() {
             <p className="mx-auto mb-8 max-w-2xl text-center text-lg font-medium text-[#6B7280]">
               Real products. Fully built, deployed, and running.
             </p>
-            <div className="mx-auto max-w-xl">
+            <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 xl:grid-cols-2">
               <article className="rounded-3xl bg-white p-8 shadow-xl shadow-black/5 md:p-10">
                 <h3 className="text-2xl font-extrabold text-[#0D0D0D]">ResumeDarzi</h3>
                 <p className="mt-4 text-base leading-relaxed font-medium text-[#6B7280]">
@@ -288,6 +289,51 @@ export default function Home() {
                   </a>
                   <a
                     href="https://www.loom.com/share/5af03cf3ddef42a79f78bdcebe3307d6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-[#5B4EE8] px-6 py-3 text-center text-sm font-extrabold text-[#5B4EE8]"
+                  >
+                    Watch Demo
+                  </a>
+                </div>
+              </article>
+
+              <article className="rounded-3xl bg-white p-8 shadow-xl shadow-black/5 md:p-10">
+                <h3 className="text-2xl font-extrabold text-[#0D0D0D]">Fitness Ecosystem</h3>
+                <p className="mt-4 text-base leading-relaxed font-medium text-[#6B7280]">
+                  A branded fitness ecosystem for creators with workouts, nutrition, progress tracking, premium programs, and a creator dashboard to manage the entire audience journey.
+                </p>
+                <ul className="mt-5 space-y-2 text-sm font-medium text-[#0D0D0D]">
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Mobile-first branded app experience</li>
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Creator dashboard + monetization flow</li>
+                  <li className="flex items-center gap-2"><span className="text-[#5B4EE8]">✓</span> Customizable for gym, yoga, Hyrox, and more</li>
+                </ul>
+                <div className="relative mt-7 aspect-[4/5] overflow-hidden rounded-2xl bg-[#0D0D0D] sm:aspect-video">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(91,78,232,0.18),transparent_60%)]" />
+                  <div className="relative h-full w-full sm:hidden">
+                    <VideoEmbed
+                      videoId="sULrktkZ8lU"
+                      title="Fitness ecosystem demo"
+                      thumbnail="/fitness-thumbnail.png"
+                    />
+                  </div>
+                  <div className="relative hidden h-full w-full sm:block">
+                    <VideoEmbed
+                      videoId="sULrktkZ8lU"
+                      title="Fitness ecosystem demo"
+                      thumbnail="/fitness-thumbnail-169.png"
+                    />
+                  </div>
+                </div>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                  <a
+                    href="/fitness"
+                    className="rounded-full bg-[#5B4EE8] px-6 py-3 text-center text-sm font-extrabold text-white shadow-xl shadow-[#5B4EE8]/15"
+                  >
+                    View Landing Page
+                  </a>
+                  <a
+                    href="https://www.youtube.com/shorts/sULrktkZ8lU"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full border border-[#5B4EE8] px-6 py-3 text-center text-sm font-extrabold text-[#5B4EE8]"
@@ -538,6 +584,5 @@ export default function Home() {
         </p>
       </footer>
     </div>
-    </>
   );
 }

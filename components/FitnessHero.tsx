@@ -6,10 +6,10 @@ interface FitnessHeroProps {
   videoId: string;
   thumbnail: string;
   name?: string; // if provided → personalised headline
-  whatsappHref: string;
+  ctaHref: string;
 }
 
-export default function FitnessHero({ videoId, thumbnail, name, whatsappHref }: FitnessHeroProps) {
+export default function FitnessHero({ videoId, thumbnail, name, ctaHref }: FitnessHeroProps) {
   const [playing, setPlaying] = useState(false);
 
   function handleWatchDemo() {
@@ -159,7 +159,7 @@ export default function FitnessHero({ videoId, thumbnail, name, whatsappHref }: 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
               {/* Primary CTA */}
               <a
-                href={whatsappHref}
+                href={ctaHref}
                 target="_blank"
                 rel="noreferrer"
                 className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 text-base font-black text-white shadow-2xl transition-all duration-200"
@@ -172,7 +172,7 @@ export default function FitnessHero({ videoId, thumbnail, name, whatsappHref }: 
                   className="absolute inset-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                   style={{ background: 'linear-gradient(135deg, #8B5CF6, #7C3AED)' }}
                 />
-                <span className="relative">Build my app — free</span>
+                <span className="relative">Book a quick call</span>
                 <svg className="relative h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
@@ -194,7 +194,7 @@ export default function FitnessHero({ videoId, thumbnail, name, whatsappHref }: 
             <div className="mt-10 flex items-center justify-center gap-8 lg:justify-start">
               {[
                 { num: '48h', label: 'Launch time' },
-                { num: '₹0', label: 'Upfront cost' },
+                { num: 'Free', label: '60-day trial' },
                 { num: '100%', label: 'Your brand' },
               ].map(({ num, label }, i) => (
                 <div key={i} className="text-center lg:text-left">

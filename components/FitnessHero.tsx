@@ -127,33 +127,31 @@ export default function FitnessHero({ videoId, thumbnail, name, ctaHref }: Fitne
             <h1 className="text-5xl font-black leading-[0.92] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
               {name ? (
                 <>
-                  {name},{' '}
+                  {name}, your audience already pays for 4 apps.
                   <span
                     className="bg-clip-text text-transparent"
                     style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 50%, #C4B5FD 100%)' }}
                   >
-                    your fitness empire
-                  </span>{' '}
-                  starts here.
+                    {' '}Make them pay you instead.
+                  </span>
                 </>
               ) : (
                 <>
-                  Your audience.{' '}
+                  Your audience already pays for 4 apps.
                   <span
                     className="bg-clip-text text-transparent"
                     style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 50%, #C4B5FD 100%)' }}
                   >
-                    Your app.
+                    {' '}Make them pay you instead.
                   </span>{' '}
-                  Your empire.
                 </>
               )}
             </h1>
 
             <p className="mx-auto mt-6 max-w-lg text-lg font-medium leading-relaxed text-[#94A3B8] lg:mx-0">
               {name
-                ? 'Your audience already trusts you. Now give them a home — a fully branded fitness app with your workouts, nutrition plans, and progress tracking. All under your name.'
-                : "Stop sending your followers to apps that don't pay you. Launch a fully branded fitness app for your audience — workouts, nutrition, progress tracking — all under your name."}
+                ? 'Launch a fully branded fitness app — free for 60 days. Your workouts, nutrition, progress tracking, all under your name.'
+                : 'Launch a fully branded fitness app — free for 60 days. Your workouts, nutrition, progress tracking, all under your name.'}
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
@@ -172,7 +170,7 @@ export default function FitnessHero({ videoId, thumbnail, name, ctaHref }: Fitne
                   className="absolute inset-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                   style={{ background: 'linear-gradient(135deg, #8B5CF6, #7C3AED)' }}
                 />
-                <span className="relative">Book a quick call</span>
+                <span className="relative">Book your free 60-day trial</span>
                 <svg className="relative h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
@@ -194,8 +192,8 @@ export default function FitnessHero({ videoId, thumbnail, name, ctaHref }: Fitne
             <div className="mt-10 flex items-center justify-center gap-8 lg:justify-start">
               {[
                 { num: '48h', label: 'Launch time' },
+                { num: '$0', label: 'Upfront' },
                 { num: 'Free', label: '60-day trial' },
-                { num: '100%', label: 'Your brand' },
               ].map(({ num, label }, i) => (
                 <div key={i} className="text-center lg:text-left">
                   <p className="text-2xl font-black text-white">{num}</p>

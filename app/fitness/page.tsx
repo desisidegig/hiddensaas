@@ -1,7 +1,7 @@
 import FitnessHero from '@/components/FitnessHero';
 
 export default function FitnessPage() {
-  const ctaHref = 'https://calendly.com/your-handle/creator-app-call';
+  const ctaHref = 'https://calendly.com/d/ct66-jqx-38v';
 
   return (
     <div className="bg-[#080B14] text-white overflow-x-hidden">
@@ -320,13 +320,15 @@ export default function FitnessPage() {
 
               <a
                 href={ctaHref}
+                target="_blank"
+                rel="noreferrer"
                 className="mt-10 block w-full rounded-full py-4 text-center text-base font-black text-white transition-all"
                 style={{
                   background: 'linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%)',
                   boxShadow: '0 0 50px rgba(124,58,237,0.4)',
                 }}
               >
-                Book a call to start your trial →
+                Book your free 60-day trial →
               </a>
               <p className="mt-4 text-center text-sm font-semibold text-[#475569]">
                 No credit card. No commitment. Cancel anytime.
@@ -336,69 +338,71 @@ export default function FitnessPage() {
         </section>
 
         {/* ═══════════════════════════════════════════════
-            FREE VS PRO — USER TIERS
+            FAQ
         ═══════════════════════════════════════════════ */}
-        <section className="px-6 py-16 md:px-10">
+        <section className="px-6 py-16 md:px-10 md:py-20">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-12 text-center">
-              <p className="text-xs font-bold tracking-[0.2em] text-[#22C55E] uppercase mb-4">Your monetisation model</p>
-              <h2 className="text-4xl font-black leading-tight tracking-tight md:text-5xl">
-                Sell more value inside{' '}
-                <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA 0%, #22C55E 100%)' }}>
-                  one subscription.
+            <div className="text-center">
+              <p className="text-xs font-bold tracking-[0.2em] text-[#A78BFA] uppercase">FAQ</p>
+              <h2 className="mt-4 text-4xl font-black leading-tight tracking-tight md:text-5xl">
+                Questions creators ask
+                <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #A78BFA, #7C3AED)' }}>
+                  {' '}before they launch.
                 </span>
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-base font-medium text-[#94A3B8]">
-                You are already selling paid coaching and courses. Either raise your price and include everything with you, or keep the same price and deliver way more value in the same subscription.
-              </p>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-                <div className="mb-6 flex items-center gap-3">
-                  <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">Base</span>
-                  <span className="text-sm font-medium text-[#64748B]">Included for all members</span>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    'Starter workout library',
-                    'Nutrition fundamentals',
-                    'Basic progress tracking',
-                    'Community access',
-                  ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm font-semibold text-[#CBD5E1]">
-                      <span className="mt-0.5 text-base text-white/40">—</span> {t}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div
-                className="rounded-3xl border border-[#7C3AED]/30 p-8"
-                style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.08) 0%, rgba(34,197,94,0.05) 100%)' }}
-              >
-                <div className="mb-6 flex items-center gap-3">
-                  <span
-                    className="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider text-white"
-                    style={{ background: 'linear-gradient(135deg, #7C3AED, #6D28D9)' }}
-                  >
-                    Premium
-                  </span>
-                  <span className="text-sm font-medium text-[#94A3B8]">Higher perceived value, better retention</span>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    'Full courses and structured programs',
-                    'Personalized plans and check-ins',
-                    'Direct coaching support and accountability',
-                    'Exclusive drops, challenges, and perks',
-                    'Priority access and faster outcomes',
-                  ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm font-semibold text-white">
-                      <span className="mt-0.5 text-base text-[#22C55E]">✓</span> {t}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-6 text-xs font-bold text-[#A78BFA]">You control what is included. You control the price. We power the experience.</p>
-              </div>
+
+            <div className="mt-10 space-y-4">
+              {[
+                {
+                  question: 'Do I need any technical knowledge to run this?',
+                  answer: "None. We handle everything — building, launching, App Store setup, hosting, and ongoing maintenance. You get a creator dashboard where you manage your clients and push plans. That's it. No code, no servers, no headaches.",
+                },
+                {
+                  question: 'What does "free for 60 days" actually mean?',
+                  answer: "You pay nothing for the first 60 days. No credit card required upfront. We build your app, get it live on iOS and Android, and you run it with your audience. After 60 days, it's $99/month to keep it running. If it hasn't worked for you, you cancel — no questions, no fees.",
+                },
+                {
+                  question: 'Will it actually have my branding — my logo, my colours?',
+                  answer: "Yes. Your app name, your logo, your brand colours, and your content. When your audience downloads it from the App Store, they see your name — not ours. We're invisible.",
+                },
+                {
+                  question: 'Why would my audience pay for an app when they already follow me for free?',
+                  answer: "They're already paying — just not you. The average fitness-conscious person spends $20-40/month across MyFitnessPal, a workout tracker, and random program PDFs. Your app replaces all of that under one subscription, with your coaching built in. You're not asking them to spend more. You're asking them to spend it with you.",
+                },
+                {
+                  question: 'Can\'t I just get a freelancer to build me an app for a one-time fee?',
+                  answer: "Yes — and it'll cost $3,000-8,000 upfront, take 3-4 months, and the moment something breaks or Apple updates their guidelines, you're on your own. With us, maintenance, updates, bug fixes, and App Store compliance are included forever. Most creators who've gone the freelancer route come back because the ongoing cost and stress isn't worth it.",
+                },
+                {
+                  question: 'How does my audience pay me through the app?',
+                  answer: 'We set up a premium subscription inside your app. Your audience subscribes directly, and payments go to you. You set the price. You decide what\'s free and what\'s premium.',
+                },
+                {
+                  question: 'How long does it actually take to launch?',
+                  answer: "Your app is ready within 48 hours of our onboarding call. App Store and Play Store approval typically takes 3-7 days after submission — that's Apple and Google's process, not ours. Most creators are fully live within 10 days of signing up.",
+                },
+                {
+                  question: 'What happens to my audience\'s data if I cancel?',
+                  answer: "Your audience data belongs to you. If you ever cancel, we provide a full export of all user data before taking the app offline. You're never locked in without an exit.",
+                },
+                {
+                  question: 'I don\'t have a huge following. Is this still worth it?',
+                  answer: 'Yes — and smaller audiences often convert better because the trust is higher. You only need 7 people from your audience paying $15/month to cover the platform cost entirely. Everything above that is profit. Creators with 8,000 engaged followers consistently outperform creators with 100,000 passive ones.',
+                },
+                {
+                  question: 'Who is behind HiddenSaaS?',
+                  answer: "We're a small team of builders who got frustrated watching creators hand their audience's attention — and money — to third-party apps. We build and maintain the tech so creators can focus entirely on their content and coaching.",
+                },
+              ].map((item, index) => (
+                <details key={index} className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 md:p-7">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+                    <span className="text-lg font-black text-white">{item.question}</span>
+                    <span className="text-xl font-bold text-[#A78BFA] transition-transform duration-200 group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-4 text-sm font-medium leading-7 text-[#94A3B8] md:text-base">{item.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>
@@ -421,13 +425,15 @@ export default function FitnessPage() {
             <div className="mt-8 flex flex-col items-center gap-3">
               <a
                 href={ctaHref}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-block w-full max-w-xs rounded-full py-4 text-center text-base font-black text-white transition-all"
                 style={{
                   background: 'linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%)',
                   boxShadow: '0 0 50px rgba(124,58,237,0.4)',
                 }}
               >
-                Book a Calendly call →
+                Book your free 60-day trial →
               </a>
               <p className="text-sm font-semibold text-[#475569]">Starts at $99/month after trial. Cancel anytime.</p>
             </div>
